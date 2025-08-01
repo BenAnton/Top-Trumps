@@ -1,0 +1,68 @@
+.GameArea-Cont {
+    
+    width: 90vw;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    
+}
+
+.GameArea-Cards {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.GameArea-Scores {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    
+}
+
+.Score-Sq {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin-inline: 10%;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.Arrow {
+    width: 200px;
+    height: 200px;
+}
+
+.GameArea-Commentary {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    max-width: 40%;
+}   
+
+.GameArea-Middle-Flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    
+}
+
+.Last-Result {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid #7e7e7e;
+    padding: 10px;
+}

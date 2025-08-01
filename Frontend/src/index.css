@@ -1,0 +1,15 @@
+Button {
+    margin-top: auto;
+    width: 200px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    border: 1px solid #7e7e7e;
+}
+
+Button:hover {
+    cursor: pointer;
+    background-color: #7e7e7e;
+    color: white;
+}

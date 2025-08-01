@@ -1,0 +1,32 @@
+.Card-Rear-Cont {
+    width: 20vw;
+    height: calc(20vw * 1.4);
+    padding: 10px;
+    font-weight: 900;
+    border: 15px solid #7e7e7e;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    
+    
+}
+
+.Card-Rear-H2 {
+    margin-block: auto;
+}
+
+.Card-Rear-Button {
+    width: 100%;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    border: 1px solid #7e7e7e;
+}
+

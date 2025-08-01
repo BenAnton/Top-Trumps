@@ -1,0 +1,8 @@
+.Header-H2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}

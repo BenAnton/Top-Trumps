@@ -1,0 +1,77 @@
+.Card-Cont {
+    border: 15px solid #7e7e7e;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    width: 450px;
+    min-width: 450px;
+    height: 630px;
+    padding: 10px;
+    font-weight: 900;
+    
+}
+
+.Player-Name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Card-Player-Img {
+    width: 75%;
+    display: flex;
+    margin: auto;
+    
+}
+
+.Card-Lower-Flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.Card-Team-Img {
+     width: 75%;
+    display: block;
+    margin-inline: auto;
+    
+ }
+.Card-Stats-Flex-Left {
+    width: 50%;
+    margin-block: auto;
+    
+}
+
+.Player-Text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.Card-Stats-Flex-Right {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-block: auto;
+}
+
+.Position-H2 {
+    text-align: center;
+}
+
+.Card-Stats-Button {
+    width: 100%;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    border: 1px solid #7e7e7e; 
+}
+
+.Card-Stats-Button:hover {
+    background-color: #7e7e7e;
+    color: white;                                                       
+    cursor: pointer;
+}
+
+.Black-Box {
+    display: none;
+}
