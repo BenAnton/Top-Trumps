@@ -25,15 +25,17 @@ const handleDeckSelect = (deck:string) => {
 
   return (
     <>
+        <div className="App-Cont">
+            
         
       <Header/>
 
         
-        {isDeckSelected ? ( <GameArea deckSelected={deckSelected}/> ): (<DeckSelection availableDecks={availableDecks} setDeckSelected={handleDeckSelect}/>)}
-      
-        
-        
-     
+        {isDeckSelected ? ( <GameArea deckSelected={deckSelected} setIsDeckSelected={{setIsDeckSelected}}/> ): (<DeckSelection availableDecks={availableDecks} setDeckSelected={handleDeckSelect}/>)}
+
+
+
+    </div>
     </>
   );
 }

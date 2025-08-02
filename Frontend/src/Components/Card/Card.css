@@ -2,12 +2,12 @@
     border: 15px solid #7e7e7e;
     background-color: #eeeeee;
     border-radius: 20px;
-    width: 450px;
-    min-width: 450px;
-    height: 630px;
     padding: 10px;
     font-weight: 900;
-    
+    display: flex;
+flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .Player-Name {
@@ -74,4 +74,45 @@
 
 .Black-Box {
     display: none;
+}
+
+.Deck-Title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 750px) {
+    .Card-Cont {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Hidden {
+        display: none;
+    }
+    
+    .Width-Adjustment {
+        width: 40%;
+    }
+    
+.Player-Name {
+    font-size: 1.5rem;
+}
+
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1200px) {
+    .Card-Cont {
+        width: 350px;
+        height: 600px;
+    }
+    .Hidden {
+        display: none;
+    }
 }

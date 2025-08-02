@@ -7,13 +7,17 @@ const arrowleft = "/Images/arrowleft.jpg"
 const arrowright = "/Images/arrowright.png"
 import {Player} from "../../Types/player";
 
+
 type StatKey = "ppg" | "apg" | "rpg" | "spg" | "bpg";
 
 interface GameAreaProps {
     deckSelected: string;
+    setIsDeckSelected: {
+        setIsDeckSelected: React.Dispatch<React.SetStateAction<boolean>>
+    }
 }
 
-function GameArea({deckSelected}: GameAreaProps) {
+function GameArea({deckSelected, setIsDeckSelected}: GameAreaProps) {
     const [playerDeck, setPlayerDeck] = useState<Player[]>([]);
     const [cpuDeck, setCpuDeck] = useState<Player[]>([]);
     const [turn, setTurn] = useState<"cpu" | "player">("player");
@@ -21,6 +25,7 @@ function GameArea({deckSelected}: GameAreaProps) {
     const [commentary, setCommentary] = useState<string>("Please select a stat to play with.");
     const [lastResult, setLastResult] = useState<string | null>(null);
     const [statsHidden, setStatsHidden] = useState<boolean>(true);
+    const [gameOver, setGameOver] = useState<boolean>(false);
     
     useEffect(() => {
         const selectedDeck = decks[deckSelected];
@@ -35,7 +40,7 @@ function GameArea({deckSelected}: GameAreaProps) {
     useEffect(() => {
         setStatsHidden(true)
         if (turn === "cpu" && playerDeck.length && cpuDeck.length) {
-            setCommentary("The CPU is choosing a stat to play with.");
+            setCommentary("The CPU is choosing a stat.");
             const timeout = setTimeout(() => {
                 const cpuStatIndex = randomPick();
                 const stat = statFromIndex(cpuStatIndex);
@@ -43,9 +48,9 @@ function GameArea({deckSelected}: GameAreaProps) {
                 setRoundResult(result);
                 updateDecks(result);
                 setTurn("player");
-                setCommentary("Please select a stat to play with.");
+                setCommentary("Please select a stat.");
                 const difference = Math.abs(playerDeck[0][stat] - cpuDeck[0][stat]).toFixed(1);
-                setLastResult(`${result} won the last round by picking ${stat} with a difference of ${difference}.`);
+                setLastResult(`${result} won the last round by ${difference}${stat}.`);
                 setStatsHidden(false);
             }, 5000);
             
@@ -57,8 +62,10 @@ function GameArea({deckSelected}: GameAreaProps) {
     useEffect(() => {
         if (playerDeck.length === 0 && cpuDeck.length > 0) {
             setCommentary(`CPU wins the game!`)
+            setGameOver(true);
         } else if (cpuDeck.length === 0 && playerDeck.length > 0) {
             setCommentary(`Player wins the game!`)
+            setGameOver(true);
         }
     }, [playerDeck.length, cpuDeck.length]);
     
@@ -81,7 +88,7 @@ function GameArea({deckSelected}: GameAreaProps) {
         const difference = Math.abs(playerDeck[0][stat] - cpuDeck[0][stat]).toFixed(1);
         if(result !== "draw")
         {
-            setLastResult(`${result} won the last round by picking ${stat} with a difference of ${difference}.`); 
+            setLastResult(`${result} won the last round!  by ${difference}${stat}.`); 
         }
         else {
             setLastResult(`The last round was a draw.`);
@@ -112,9 +119,11 @@ function GameArea({deckSelected}: GameAreaProps) {
     return (
         <div className="GameArea-Cont">
             <div className="GameArea-Cards">
+                {gameOver && <div className="Game-Finished-Card">GAME FINISHED</div>}
                 {playerDeck[0] && <Card 
                     player={playerDeck[0]}
                     onStatClick={turn === "player" ? handlePlayerChoice : undefined}
+                    deckSelected={deckSelected}
                     />}
                 
                 <div className="GameArea-Middle-Flex">
@@ -123,21 +132,21 @@ function GameArea({deckSelected}: GameAreaProps) {
                         {lastResult && <p className="Last-Result">{lastResult}</p>}
                     </div>
                 {turn === "player" 
-                    ? <img className="Arrow" src={arrowleft} alt="arrow-left"/> 
-                    : <img className="Arrow" src={arrowright} alt="arrow-right"/>}
+                    ? <img className="Arrow Rotate-Arrow" src={arrowleft} alt="arrow-left"/> 
+                    : <img className="Arrow Rotate-Arrow" src={arrowright} alt="arrow-right"/>}
 
                     
                 </div>
-                {cpuDeck[0] && <Card player={cpuDeck[0]}
+                {cpuDeck[0] && <Card player={cpuDeck[0]} deckSelected={deckSelected}
                 statsHidden={statsHidden}/>}
             </div>
 
 
             <div className="GameArea-Scores">
-                <div className="Score-Sq">Player: {playerDeck.length}</div>
-                <div className="Score-Sq">Cpu: {cpuDeck.length}</div>
+                <div className="Score-Sq">Player Deck: {playerDeck.length}</div>
+                <div className="Score-Sq">Cpu Deck: {cpuDeck.length}</div>
             </div>
-            
+            {gameOver && <button className="Reset-Button" onClick={() => setIsDeckSelected.setIsDeckSelected(false)}>Reset</button>}
       
             
         </div>

@@ -1,12 +1,12 @@
 .DeckSelection-Grid {
  display: grid;
-   width: 95vw;
-
+   width: 90%;
+ height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
     justify-items: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 .DeckSelection-Heading {
@@ -14,4 +14,55 @@
     font-size: 2rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
+}
+
+.Show-Database-Button {
+ width: 250px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 25px;
+}
+
+.Player-Grid-Cont {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 10px;
+ overflow: scroll;
+ width: 100%;
+ justify-items: center;
+ margin-top: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+ 
+ .DeckSelection-Grid {
+     grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+ }
+ 
+ .Player-Grid-Cont {
+     grid-template-columns: 1fr;
+  
+ }
+
+ .Show-Database-Button {
+  margin-bottom: 35px;
+ }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1500px) {
+ .DeckSelection-Grid {
+  grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media only screen and (min-width: 1500px) {
+ .Player-Grid-Cont {
+  grid-template-columns: 1fr 1fr 1fr;
+  
+ }
 }

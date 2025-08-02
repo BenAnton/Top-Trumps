@@ -443,7 +443,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 897,
             mpg: 38.4,
-            img: "default"
+            img: "../../public/Images/Players/bird.avif"
         },
         {
             name: "Magic Johnson",
@@ -457,7 +457,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.4,
             gp: 906,
             mpg: 36.7,
-            img: "default"
+            img: "../../public/Images/Players/magic.avif"
         },
         {
             name: "Clyde Drexler",
@@ -471,7 +471,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.7,
             gp: 1086,
             mpg: 34.6,
-            img: "default"
+            img: "../../public/Images/Players/drexler.avif"
         },
         {
             name: "Dominique Wilkins",
@@ -485,7 +485,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.6,
             gp: 1074,
             mpg: 35.5,
-            img: "default"
+            img: "../../public/Images/Players/dom.webp"
         },
         {
             name: "James Worthy",
@@ -499,7 +499,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.6,
             gp: 926,
             mpg: 32.4,
-            img: "default"
+            img: "../../public/Images/Players/worthy.avif"
         },
         {
             name: "Kareem Abdul-Jabbar",
@@ -513,7 +513,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 2.6,
             gp: 1560,
             mpg: 36.8,
-            img: "default"
+            img: "../../public/Images/Players/kareem.avif"
         },
         {
             name: "Julius Erving",
@@ -527,7 +527,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 1.7,
             gp: 1243,
             mpg: 35.3,
-            img: "default"
+            img: "../../public/Images/Players/erving.webp"
         },
         {
             name: "George Gervin",
@@ -541,7 +541,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 791,
             mpg: 33.5,
-            img: "default"
+            img: "../../public/Images/Players/gervin.avif"
         },
         {
             name: "Bill Laimbeer",
@@ -555,7 +555,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 1.1,
             gp: 1068,
             mpg: 31.8,
-            img: "default"
+            img: "../../public/Images/Players/laimbeer.jpeg"
         },
         {
             name: "Kevin McHale",
@@ -569,7 +569,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 1.7,
             gp: 971,
             mpg: 31.3,
-            img: "default"
+            img: "../../public/Images/Players/mchale.avif"
         }
     ],
     "The Dream Team": [
@@ -585,7 +585,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 1072,
             mpg: 38.3,
-            img: "default"
+            img: "../../public/Images/Players/mj.png"
         },
         {
             name: "Magic Johnson",
@@ -599,7 +599,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.4,
             gp: 906,
             mpg: 36.7,
-            img: "default"
+            img: "../../public/Images/Players/magic.avif"
         },
         {
             name: "Larry Bird",
@@ -613,7 +613,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 897,
             mpg: 38.4,
-            img: "default"
+            img: "../../public/Images/Players/bird.avif"
         },
         {
             name: "Charles Barkley",
@@ -627,7 +627,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 1073,
             mpg: 36.7,
-            img: "default"
+            img: "../../public/Images/Players/barkley.webp"
         },
         {
             name: "Karl Malone",
@@ -641,7 +641,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 1476,
             mpg: 37.2,
-            img: "default"
+            img: "../../public/Images/Players/malone.webp"
         },
         {
             name: "Scottie Pippen",
@@ -655,7 +655,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 1178,
             mpg: 34.9,
-            img: "default"
+            img: "../../public/Images/Players/pippen.webp"
         },
         {
             name: "Patrick Ewing",
@@ -669,7 +669,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 2.4,
             gp: 1183,
             mpg: 34.3,
-            img: "default"
+            img: "../../public/Images/Players/ewing.avif"
         },
         {
             name: "David Robinson",
@@ -683,7 +683,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 3.0,
             gp: 987,
             mpg: 34.7,
-            img: "default"
+            img: "../../public/Images/Players/drob.avif"
         },
         {
             name: "John Stockton",
@@ -697,7 +697,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.2,
             gp: 1504,
             mpg: 31.8,
-            img: "default"
+            img: "../../public/Images/Players/stockton.webp"
         },
         {
             name: "Chris Mullin",
@@ -711,7 +711,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.4,
             gp: 986,
             mpg: 32.6,
-            img: "default"
+            img: "../../public/Images/Players/mullin.avif"
         }
     ],
 
@@ -728,7 +728,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.5,
             gp: 1346,
             mpg: 36.1,
-            img: "default"
+            img: "../../public/Images/Players/kobe.avif"
         },
         {
             name: "LeBron James",
@@ -742,7 +742,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 1500,
             mpg: 38.0,
-            img: "default"
+            img: "../../public/Images/Players/lebron.avif"
         },
         {
             name: "Dwyane Wade",
@@ -756,7 +756,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.8,
             gp: 1054,
             mpg: 33.9,
-            img: "default"
+            img: "../../public/Images/Players/wade.webp"
         },
         {
             name: "Chris Paul",
@@ -770,7 +770,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.1,
             gp: 1250,
             mpg: 33.4,
-            img: "default"
+            img: "../../public/Images/Players/cp3.avif"
         },
         {
             name: "Dwight Howard",
@@ -784,7 +784,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 1.8,
             gp: 1242,
             mpg: 34.6,
-            img: "default"
+            img: "../../public/Images/Players/dwight.webp"
         },
         {
             name: "Carmelo Anthony",
@@ -798,7 +798,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.5,
             gp: 1260,
             mpg: 34.8,
-            img: "default"
+            img: "../../public/Images/Players/carmelo.webp"
         },
         {
             name: "Jason Kidd",
@@ -812,7 +812,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.3,
             gp: 1391,
             mpg: 36.0,
-            img: "default"
+            img: "../../public/Images/Players/kidd.png"
         },
         {
             name: "Deron Williams",
@@ -826,7 +826,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.2,
             gp: 845,
             mpg: 34.3,
-            img: "default"
+            img: "../../public/Images/Players/deron.avif"
         },
         {
             name: "Tayshaun Prince",
@@ -840,7 +840,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.6,
             gp: 1011,
             mpg: 33.2,
-            img: "default"
+            img: "../../public/Images/Players/prince.avif"
         },
         {
             name: "Michael Redd",
@@ -854,7 +854,7 @@ export const decks : Record<string, Player[]> = {
             bpg: 0.2,
             gp: 629,
             mpg: 33.2,
-            img: "default"
+            img: "../../public/Images/Players/redd.jpeg"
         }
     ]
     

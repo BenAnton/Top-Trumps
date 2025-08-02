@@ -1,6 +1,6 @@
 .Card-Rear-Cont {
-    width: 20vw;
-    height: calc(20vw * 1.4);
+    width: 450px;
+    height: 200px;
     padding: 10px;
     font-weight: 900;
     border: 15px solid #7e7e7e;
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     
@@ -30,3 +30,21 @@
     border: 1px solid #7e7e7e;
 }
 
+@media only screen and (max-width: 750px) {
+    .Card-Rear-Cont {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1500px) {
+    .Card-Rear-Cont {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .Card-Rear-Cont {
+        width: 90%;
+    }
+}

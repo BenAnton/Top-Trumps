@@ -1,7 +1,6 @@
 .GameArea-Cont {
+    width: 100%;
     
-    width: 90vw;
-    margin-inline: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,9 +11,10 @@
 
 .GameArea-Cards {
     display: flex;
-    height: 50vh;
-    width: 100%;
-    margin-inline: auto;
+    height: 50%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -65,4 +65,55 @@
     font-weight: 700;
     border: 2px solid #7e7e7e;
     padding: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .GameArea-Cont {
+        width: 90%;
+        height: auto;
+    }
+    
+    .GameArea-Cards {
+        flex-direction: column;
+    }
+
+    .Rotate-Arrow {
+        transform: rotate(90deg);
+    }
+
+    .GameArea-Middle-Flex {
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .GameArea-Scores {
+    margin-top: 400px;
+    }
+    
+    .Reset-Button {
+        margin-top: 75px;
+    }
+    
+    .Game-Finished-Card {
+        border: 15px solid #7e7e7e;
+        width: 90vw;
+        height: 300px;
+        padding: 10px;
+        font-weight: 900;
+        background-color: #eeeeee;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    @media only screen and (max-width: 1500px) {
+        .Game-Finished-Card {
+            max-width: 1500px;
+        }
+    }
 }
